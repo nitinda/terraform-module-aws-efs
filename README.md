@@ -110,4 +110,4 @@ data "terraform_remote_state" "<module_name>" {
 ```
 
 ## Authors
-Module maintained by Module maintained by the - Nitin Das
+Module maintained by Module maintained by the - **_Nitin Das_**
