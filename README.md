@@ -44,7 +44,7 @@ To use this module, add the following call to your code:
 
 ```tf
 module "<layer>-efs-<AccountID>" {
-  source = "git::https://github.com/nitinda/terraform-module-aws-s3.git?ref=terraform-11/master"
+  source = "git::https://github.com/nitinda/terraform-module-aws-efs.git?ref=terraform-11/master"
 
   # Providers
   providers = {
