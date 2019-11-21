@@ -1,4 +1,4 @@
-resource "aws_efs_file_system" "market_efs_file_system" {
+resource "aws_efs_file_system" "efs_file_system" {
     creation_token                  = "${var.creation_token}"
     encrypted                       = "${var.encrypted}"
     kms_key_id                      = "${var.kms_key_id}"
