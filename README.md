@@ -25,10 +25,6 @@ From branch : **_terraform-11_**
 
 * **_EFS (Terraform 11 supported code)_**
 
-From branch : **_terraform-12_** *work in progress*
-
-* **_EFS (Terraform 12 supported code - work in progres)_**
-
 
 ---
 
@@ -60,13 +56,19 @@ module "<layer>-efs-<AccountID>" {
 The variables required in order for the module to be successfully called from the deployment repository are the following:
 
 
-| Variable               |          Description         |    Type    |
-|------------------------|------------------------------|------------|
-|                        |                              |            |
+|         **_Variable_**          |        **_Description_**            |   **_Type_**   |
+|---------------------------------|-------------------------------------|----------------|
+| creation_token                  | A unique name for EFS               | string         |
+| encrypted                       | disk will be encrypted              | string         |
+| lifecycle_policy                | A file system lifecycle policy      | list           |
+| performance_mode                | The file system performance mode    | string         |
+| provisioned_throughput_in_mibps | The throughput, measured in MiB/s   | string         |
+| throughput_mode                 | Throughput mode for the file system | string         |
+| subnet_ids                      | The IDS sof the subnets             | list           |
+| security_groups                 | A list of security group IDs        | list           |
+| common_tags                     | Resource Tags                       | map            |
 
 
-
-Details are in respective branch.
 
 
 ## Outputs
