@@ -44,9 +44,32 @@ To use this module, add the following call to your code:
 
 ```tf
 module "<layer>-efs-<AccountID>" {
-  source = "git::https://github.com/nitinda/terraform-module-aws-s3.git?ref=master"
+  source = "git::https://github.com/nitinda/terraform-module-aws-s3.git?ref=terraform-11/master"
 
+  # Providers
+  providers = {
+    "aws" = "aws.services"
+  }
 
+  # Tags
+  common_tags = "${merge(var.common_tags, map(
+    "Name", "efs-storage",
+    "Description", "EFS storage",
+    "ManagedBy", "Terraform"
+  ))}"
+
+  # EFS
+  creation_token                  = "${var.efs_creation_token}"
+  encrypted                       = "${var.efs_encrypted}"
+  kms_key_id                      = "${var.efs_kms_key_id}"
+  lifecycle_policy                = "${var.efs_lifecycle_policy}"
+  performance_mode                = "${var.efs_performance_mode}"
+  provisioned_throughput_in_mibps = "${var.efs_provisioned_throughput_in_mibps}"
+  throughput_mode                 = "${var.efs_throughput_mode}"
+
+  # EFS Mount Target
+  subnet_ids      = ["${var.subnet_ids}"]
+  security_groups = ["${var.security_groups}"]
 }
 ```
 ---
