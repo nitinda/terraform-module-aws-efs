@@ -10,7 +10,7 @@ _This module may be used to create_ **_Elastic File System_** _resources in AWS 
 
 ## Prerequisites
 
-_This module needs_ **_Terraform 0.11.10_** _or newer._
+_This module needs_ **_Terraform 0.12.19_** _or newer._
 _You can download the latest Terraform version from_ [here](https://www.terraform.io/downloads.html).
 
 _This module deploys aws services details are in respective feature branches._
@@ -20,13 +20,6 @@ _This module deploys aws services details are in respective feature branches._
 ## Features Branches
 
 _Below we are able to check the resources that are being created as part of this module call:_
-
-_From branch :_ **_terraform-11/master_**
-
-* **_Elastic File System_**
-* **_EFS Mount Targets_**
-
-_From branch :_ **_terraform-12/master_**
 
 * **_Elastic File System_**
 * **_EFS Mount Targets_**
@@ -43,7 +36,7 @@ _To use this module, add the following call to your code:_
 
 ```tf
 module "efs" {
-  source = "git::https://github.com/nitinda/terraform-module-aws-s3.git?ref=master"
+  source = "git::https://github.com/nitinda/terraform-module-aws-efs.git?ref=terraform-12/master"
 
 
 }
@@ -59,7 +52,6 @@ _The variables required in order for the module to be successfully called from t
 |:----|:----|-----:|-----:|
 
 
-_Details are in respective branch._
 
 
 ## Outputs
@@ -69,7 +61,6 @@ _Details are in respective branch._
 * **_dns\_name_**
 
 
-_Details are in respective branch._
 
 
 ---
