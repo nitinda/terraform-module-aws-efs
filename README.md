@@ -7,9 +7,8 @@ _Terraform Module for_ **_AWS Elastic File System (EFS)_**
 
 ![_Code : Stable_](https://img.shields.io/badge/Code-Stable-brightgreen?style=for-the-badge&logo=github)
 
-> **_This is a stable example. It should successfully build out of the box_**
+> **_This Code is a stable._**
 >
-> _This examples does is built on Construct Libraries marked "Stable" and does not have any infrastructure prerequisites to build._
 
 ---
 <!--END STABILITY BANNER-->
