@@ -36,7 +36,6 @@ _This module deploys aws services details are in respective feature branches._
 _Below we are able to check the resources that are being created as part of this module call:_
 
 * **_Elastic File System_**
-* **_EFS Mount Targets_**
 
 
 ---
