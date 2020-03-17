@@ -7,7 +7,6 @@ _Terraform Module for_ **_AWS Elastic File System (EFS)_**
 
 ![_Code : Stable_](https://img.shields.io/badge/Code-Stable-brightgreen?style=for-the-badge&logo=github)
 
-> **_The Code is a stable._**
 >
 
 ---
