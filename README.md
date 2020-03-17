@@ -63,7 +63,7 @@ _The variables required in order for the module to be successfully called from t
 
 
 |**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** |
-|:----|:----|-----:|----:|
+|:----|:----|-----:|:---:|
 | **_creation\_token_** | _A unique name_ | _string_ | **_Optional <br/> (Default - null)_** |
 | **_encrypted_** | _If true, the disk will be encrypted_ | _bool_ | **_Optional <br/> (Default - false)_** |
 | **_kms\_key\_id_** | _The ARN for the KMS encryption key_ | _string_ | **_Optional <br/> (Default - null)_** |
