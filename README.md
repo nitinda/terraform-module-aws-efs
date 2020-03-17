@@ -1,6 +1,6 @@
 # _Terraform Module : terraform-module-aws-efs_
 
-_Terraform Module for AWS Elastic File System (EFS)_
+_Terraform Module for_ **_AWS Elastic File System (EFS)_**
 
 <!--BEGIN STABILITY BANNER-->
 ---
